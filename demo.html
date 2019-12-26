@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="waibao.js"></script>
+</head>
+<body onload="waibao()">
+    <div id="yhm"></div>
+    <div id="mm"></div>
+    <div id="kc"></div>
+    <button onclick="xianshixueshengxinxi()">点击显示用户名和密码</button>
+    <button onclick="xuanke()">点击选课</button>
+    <script type="text/外包">
+        bianliang yhm = "2017211872";
+        bianliang mm = "123456";
+
+        hanshu xianshixueshengxinxi() {
+            document.getElementById("yhm").innerHTML = yhm;
+            document.getElementById("mm").innerHTML = mm;
+        }
+
+        hanshu xuanke() {
+            bianliang kechengliebiao = ["足球", "排球", "蛙泳", "自由泳", "跆拳道", "素质拓展"];
+            duiyu (bianliang kecheng shuyu kechengliebiao) {
+                ruguo(document.getElementById(kecheng) === kong) {
+                    bianliang kechengbiaoqian = document.createElement("div");
+                    kechengbiaoqian.id = kecheng;
+                    bianliang xuankeanniu = document.createElement("button");
+                    xuankeanniu.innerHTML = "选课";
+                    xuankeanniu.onclick = () => {alert("选课成功")};
+                    kechengbiaoqian.innerHTML = kecheng;
+                    kechengbiaoqian.appendChild(xuankeanniu);
+                    document.getElementById("kc").appendChild(kechengbiaoqian);
+                }
+            }
+        }
+    </script>
+</body>
+</html>
