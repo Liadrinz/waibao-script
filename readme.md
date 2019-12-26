@@ -10,7 +10,7 @@
 
 ## 引入方法
 
-```js
+```html
 <head>
     <script src="./waibao.js"></script>
 </head>
